@@ -1,0 +1,168 @@
+/* html{
+    height: 100%;
+} */
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content:space-around ;
+    align-items: "center";
+    z-index: 1;
+}
+
+.navbar .logo-div{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.navbar .nav-logo{
+    width: 50px;
+    height: 50px;
+}
+.navbar .logo-div p{
+    margin-left: -20%;
+    margin-top: 5%
+}
+
+.navbar .links{
+    width: 50%;
+}
+.navTitle {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    left: 25%;
+    top: 25%;
+    font-size: 20px;
+    font-family: cursive;
+    margin: 8px;
+    
+}
+.navbar a:hover{
+    color: blue;
+}
+
+    /* Footer */
+footer{
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+footer .copywright {
+    width: 50%;
+}
+
+footer .copywright p{
+    margin-left: 10%;
+    line-height: 0.5em;
+}
+
+footer .footerContactDiv{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+footer .footerContactDiv .call{
+    width: 20%;
+}
+footer .footerContactDiv .write{
+    width: 20%;
+}
+
+footer .footerContactDiv .follow{
+    width: 35%;
+}
+footer .footerContactDiv .follow a{
+    margin-right: 8px;
+}
+
+footer .footerContactDiv .adminPanel {
+    margin-right: 9%;
+    margin-left: -9%;
+
+}
+footer .footerContactDiv .adminPanel img {
+    margin: -6%;
+}
+
+
+
+/* 
+@media only screen and (max-width: 1550px) {
+
+    .navbar{
+        background-color: #000;
+    }
+
+    .navbar .logo-div p{
+        margin-left: -15%;
+        margin-top: 5%;
+        color: blue;
+    }
+
+}
+
+@media only screen and (max-width: 1450px) {
+
+    .navbar{
+        background-color: #a73d3d;
+    }
+
+    .navbar .logo-div p{
+        margin-left: -15%;
+        margin-top: 5%;
+        color: blue;
+    }
+
+}
+
+
+@media only screen and (max-width: 1350px) {
+
+    .navbar{
+        background-color: #635353;
+    }
+
+    .navbar .logo-div p{
+        margin-left: -11%;
+        margin-top: 5%;
+        color: blue;
+    }
+
+}
+@media only screen and (max-width: 1250px) {
+
+    .navbar{
+        background-color: #26a858;
+    }
+
+    .navbar .logo-div p{
+        margin-left: -9%;
+        margin-top: 7%;
+        color: blue;
+    }
+
+} */

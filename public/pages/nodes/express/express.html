@@ -1,0 +1,166 @@
+
+    <p class="para">
+        Express, also known as Express.js, is a popular open-source web application framework for Node.js. It provides a simple 
+        and flexible interface for building web applications and APIs. Express.js is built on top of Node.js and provides a set 
+        of features and tools to handle HTTP requests, routes, middleware, and other common web application functionalities.
+    </p>
+    <p class="para">
+        Express.js allows developers to quickly and easily create robust web applications and APIs by providing a minimal and flexible 
+        set of features that can be easily extended and customized as needed. It also has a large ecosystem of plugins and middleware that 
+        can be used to add additional functionality to an application.
+    </p>
+
+
+    <h3>Get started</h3>
+    <p>1. Create a folder called `myapp` to contain the application</p>
+    <p>2. Open the folder in VS Code</p>
+    <p>3. Create a file called `app.js`</p>
+    <p>4. Create a file called `package.json`</p>
+    <p>5. Write a set of curly braces `{}` in the `package.json` file</p>
+
+    <img
+        class="expressImg"
+      src="./images/Express1.png"
+      alt="Screenshot of VS Code"
+    />
+    <p>
+      6. Open the integrated terminal in VS Code and write the command `npm
+      install express` to install Express
+    </p>
+    <p>
+      7. You should now have a folder called `node_modules`, a
+      `package-lock.json` file. Futhermore, the `package.json` file should now
+      contain a JSON object called `dependencies` with one key/value pair as
+      shown on the screenshot below:
+    </p>
+    <img
+    class="expressImg"
+      src="./images/Express2.png"
+      alt="Screenshot of VS Code"
+    />
+    <p>
+      8. To allow us to use the import and export statements introduced in ES6
+      (ECMAScript 6) modules we will have to add another key/value pair in the
+      `package.json` to let Node.js know that we want to use it - write `"type":
+      "module"` as shown below:
+    </p>
+    <img
+    class="expressImg"
+      src="./images/Express3.png"
+      alt="Screenshot of VS Code"
+    />
+    <p>
+      9. Now let's import express in the `app.js` and instantiate it in a
+      variable called `app`. To do so, copy the code below and paste it into
+      `app.js`
+    </p>
+    <div class="code-container">
+      <div class="code-block-header">app.js</div>
+      <div class="code-wrapper">
+        <pre>
+          <code id="code-1">
+import express from "express";
+const app = express();          
+</code>
+        </pre>
+        <button class="copy-button" id="copy-button-1">copy</button>
+      </div>
+    </div>
+    <p>
+      10. In the bottom of `app.js` we will now define a port and make the app
+      listen on that port. When an Express app is listening on a specific port,
+      it means that it is actively waiting for incoming HTTP requests on that
+      port number, and any incoming requests that match the app's defined routes
+      and methods will be handled by the app.
+    </p>
+    <div class="code-container">
+      <div class="code-block-header">app.js</div>
+      <div class="code-wrapper">
+        <pre>
+          <code id="code-2">
+const PORT = 8080;
+app.listen(PORT, (error) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log("Server is running on", PORT);
+  }
+});         
+</code>
+        </pre>
+        <button class="copy-button" id="copy-button-2">copy</button>
+      </div>
+    </div>
+    <p>
+      11. It is now time to create our first route and with it let the app
+      handle a HTTP GET request to the specific endpoint `/`. For now we will
+      just let the app respond with a simple <code>&lth1&gt</code> tag:
+    </p>
+    <div class="code-container">
+      <div class="code-block-header">app.js</div>
+      <div class="code-wrapper">
+        <pre>
+          <code id="code-3">
+app.get("/", (req, res) =>{
+    res.send(`&lth1&gt Hello World &lth1&gt`);
+});      
+</code>
+        </pre>
+        <button class="copy-button" id="copy-button-3">copy</button>
+      </div>
+    </div>
+
+    <p>
+      12. It is finally time to run the app! Open the integrated terminal in VS
+      Code and write the command `node app.js`.
+    </p>
+    <p>13. Open your browser and navigate to the endpoint we created on <a href="http://localhost:8080/" target="_blank">http://localhost:8080/ </a></p>
+    <p>14. You should be able to see the following in the browser:</p>
+    <img
+      class="expressImg"
+      src="./images/Express4.png"
+      alt="Screenshot of VS Code"
+    />
+
+
+
+    <!-- <p class="para">
+        Some of the key features of Express.js include:
+    </p>
+
+    <ul>
+        <li>
+            Routing:
+            <p>
+                Express.js provides a powerful routing system that allows developers to define routes for handling HTTP requests.
+            </p>
+        </li>
+        <li>
+            Middleware:
+            <p>
+                Express.js middleware functions can be used to modify request and response objects, handle errors, and perform other tasks.
+            </p>
+        </li>
+        <li>
+            Static file serving:
+            <p>
+                Express.js can serve static files, such as images and CSS files, directly from the file system.     
+            </p>
+        </li>
+    </ul>
+
+    <p class="para">
+        Overall, Express.js is a popular and widely used framework that can help developers build web applications and APIs quickly and efficiently.
+    </p> -->
+
+
+
+
+
+        </div>
+    </div>
+</div>
+<script src="./pages/nodes/nodes.js"></script>
+<script src="./pages/nodes/express/express.js"></script>
+</body>
+</html>

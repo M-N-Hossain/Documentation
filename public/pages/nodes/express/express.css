@@ -1,0 +1,67 @@
+.para{
+    font-size: 20px;
+}
+
+li{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li p{
+    font-weight: normal;
+}
+.expressImg{
+    position: relative;
+    width: 300px;
+    left: 292px;
+}
+
+
+/* Code snippets */
+.code-container {
+    width: 800px;
+    overflow-x: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 7rem;
+  }
+  .code-block-header {
+    color: #fff;
+    background-color: hsl(184, 91%, 17%);
+    padding: 12px 16px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .code-wrapper {
+    position: relative;
+  }
+  .code-wrapper pre {
+    background-color: hsl(209, 61%, 16%);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 0 0 5px 5px;
+    text-align: left;
+  }
+  
+  .copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(90, 184, 164);
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .copy-button:hover {
+    scale: 105%;
+    background-color: hsl(185, 81%, 29%);
+  }
+  .hljs {
+    background-color: transparent;
+  }
+  
