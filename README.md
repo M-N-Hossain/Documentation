@@ -1,4 +1,4 @@
-# REST API Convention Documentation
+# Documentation
 
 This documentation website provides information about Node.js, Express, and related tools and also REST API conventions. 
 It is designed for users who have some familiarity with JavaScript, Node.js, and Express. 
